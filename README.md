@@ -13,6 +13,7 @@ Elle permet également de connaître les présivions météo dans la journée et
 
 ### Installation
 
+```
 git clone https://github.com/Safi60/app-OpenWeather.git
 ```
 ## Authors
