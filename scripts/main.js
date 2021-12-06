@@ -33,7 +33,7 @@ function apiCall(lon, lat) {
         return answer.json();
     })
     .then((data) => {
-        console.log(data);
+        // console.log(data);
 
         resultAPI = data;
 
@@ -68,7 +68,7 @@ function apiCall(lon, lat) {
             dayValue[index].innerText = `${Math.trunc(resultAPI.daily[index+1].temp.day)}°`;
         }
 
-        if (hourValue >= 6 && hourValue < 21) {
+        if (actualHour >= 6 && actualHour < 21) {
             logoWeather.src = `ressources/jour/${resultAPI.current.weather[0].icon}.svg`
         } else {
             logoWeather.src = `ressources/nuit/${resultAPI.current.weather[0].icon}.svg`
